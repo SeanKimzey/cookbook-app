@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get '/the_recipe' => 'recipes#show_the_recipe'
+  get '/the_recipes' => 'recipes#show_the_recipes'
 end
