@@ -13,10 +13,15 @@ class V1:: RecipesController < ApplicationController
 
   def create
 
-    recipe1 = Recipe.new(title: params[:input_title], ingredients: params[:input_ingredients], directions: params[:input_directions], prep_time: params[:input_prep_time], chef: params[:input_chef], image_url: params[:input_image_url])
-
+    recipe1 = Recipe.new(
+      title: "smoothie", 
+      ingredients: "fruit, juice, yogurt", 
+      directions: "blend it", 
+      prep_time: "2 secondss", 
+      chef: "sean", 
+      image_url: "n/a"
+      )
     recipe1.save
-
     render json: recipe1.as_json
   end
 
