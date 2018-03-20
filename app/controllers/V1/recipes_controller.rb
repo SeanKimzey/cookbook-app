@@ -1,5 +1,9 @@
 class V1:: RecipesController < ApplicationController
   def index
+    p "*" * 50
+    p current_user
+    p "*" * 50
+
     recipes = Recipe.all
     render json: recipes.as_json
   end
